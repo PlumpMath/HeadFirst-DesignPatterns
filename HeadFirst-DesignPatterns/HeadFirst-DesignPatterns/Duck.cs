@@ -10,5 +10,12 @@
         public void performQuack() {
             quackBehaviour.quack();
         }
+
+        public void setFlyBehavior(FlyBehaviour fb) {
+            flyBehaviour = fb;
+        }
+        public void setQuackBehavior(QuackBehaviour qb) {
+            quackBehaviour = qb;
+        }
     }
 }

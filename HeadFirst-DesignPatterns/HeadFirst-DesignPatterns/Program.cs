@@ -12,6 +12,16 @@ namespace HeadFirst_DesignPatterns {
             mallord.performFly();
             mallord.performQuack();
             Console.ReadKey();
+
+            Duck model = new ModelDuck();
+            model.performFly();
+            model.setFlyBehavior(new FlyRocketPowered());
+            model.performFly();
+            Console.ReadKey();
+
+            DuckCallDevice hunterOneDevice = new HunterDuckCallDevice();
+            hunterOneDevice.performQuack();
+            Console.ReadKey();
         }
     }
 }
